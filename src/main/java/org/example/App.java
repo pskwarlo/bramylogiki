@@ -11,14 +11,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) {
-        stage.setTitle("Tytul gry");
+        stage.setTitle("Bramy Logiki");
         stage.show();
-        var panel1 = new Pane(label1);
-        panel1.setStyle("-fx-background-color: yellow;");
         var label2 = new Label("Otwórz bramę");
         var label3 = new Label("Dostosuj bramę");
         var label4= new Label("Zamknij bramę");
-        var scene = new Scene(new StackPane(label1, label2, label3, label4), 1280, 1024);
+        var scene = new Scene(new StackPane(label2, label3, label4), 1280, 1024);
         stage.setScene(scene);
         stage.show();
     }
