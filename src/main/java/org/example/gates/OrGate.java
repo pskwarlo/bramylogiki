@@ -5,13 +5,17 @@ import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import lombok.Getter;
 import org.example.controller.gates.AndGateController;
+import org.example.controller.gates.OrGateController;
 
 import java.io.IOException;
 @Getter
-public class AndGate extends Gate{
-    private AndGateController andGateController;
-    public AndGate() {
-        super(false, false, false, GateType.AND);
+
+public class OrGate extends Gate {
+
+    private OrGateController orGateController;
+
+    public OrGate() {
+        super(false,false,false, GateType.OR);
         initialize();
     }
     private void initialize() {
@@ -19,7 +23,7 @@ public class AndGate extends Gate{
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("andGate.fxml"));
             Parent root = fxmlLoader.load();
-            this.andGateController = fxmlLoader.<AndGateController>getController();
+            this.orGateController = fxmlLoader.<OrGateController>getController();
             AnchorPane.setTopAnchor(root, 0.0);
             AnchorPane.setLeftAnchor(root, 0.0);
             this.getChildren().add(root);
