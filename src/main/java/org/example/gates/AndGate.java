@@ -9,7 +9,7 @@ import org.example.controller.gates.AndGateController;
 import java.io.IOException;
 @Getter
 public class AndGate extends Gate{
-    private AndGateController andGateController;
+        private AndGateController andGateController;
     public AndGate() {
         super(false, false, false, GateType.AND);
         initialize();

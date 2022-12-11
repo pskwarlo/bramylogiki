@@ -1,9 +1,8 @@
 package org.example.controller.gates;
+
 import javafx.fxml.FXML;
-
+import javafx.scene.image.ImageView;
 import lombok.Getter;
-
-import javax.swing.text.html.ImageView;
 
 @Getter
 public class AndGateController {
