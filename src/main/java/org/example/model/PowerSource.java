@@ -1,0 +1,40 @@
+package org.example.model;
+
+import javafx.scene.shape.Line;
+
+
+public class PowerSource extends Circuit {
+
+
+    private Line outputLine;
+
+    private Circuit nextComponent;
+
+    public PowerSource(final boolean output) {
+        super(false,output);
+    }
+
+    public PowerSource() {
+        this(false);
+    }
+
+    public void togglePower() {
+        setOutput(!getOutputValue());
+    }
+
+    public void setOutputLine(Line outputLine) {
+        this.outputLine = outputLine;
+    }
+
+    public void setNextComponent(Circuit nextComponent) {
+        this.nextComponent = nextComponent;
+    }
+
+    public Line getOutputLine() {
+        return outputLine;
+    }
+
+    public Circuit getNextComponent() {
+        return nextComponent;
+    }
+}

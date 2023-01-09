@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.levels.BestScore">
+   <children>
+      <ListView fx:id="namesBoard" layoutX="300.0" layoutY="150.0" prefHeight="700.0" prefWidth="550.0" style="-fx-fixed-cell-size: 70;" />
+      <ListView fx:id="pointsBoard" layoutX="850.0" layoutY="150.0" prefHeight="700.0" prefWidth="250.0" style="-fx-fixed-cell-size: 70;" />
+      <Button layoutX="300.0" layoutY="900.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="75.0" prefWidth="800.0" text="Powrót do menu głównego">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
